@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Experimental Research Notes Repository"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "Transcribe Wellcome"
+description = "Transcribing Accession and Registration Records for WHMM and WHML"
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
