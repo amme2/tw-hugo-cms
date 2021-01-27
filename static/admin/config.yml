@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: amme2/tw-hugo-cms # Path to your GitHub repository
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "docs" # Used in routes, e.g., /admin/collections/blog
+    label: "Docs" # Used in the UI
+    folder: "content/docs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Table of Contents", name: "toc", widget: "hidden", default: "true"}
+      - {label: "Body", name: "body", widget: "markdown"}
