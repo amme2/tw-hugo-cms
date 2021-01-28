@@ -18,7 +18,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Table of Contents", name: "toc", widget: "hidden", default: "true"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "prologue" # Used in routes, e.g., /admin/collections/blog
@@ -31,12 +30,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Table of Contents", name: "toc", widget: "hidden", default: "true"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "privacy" # Used in routes, e.g., /admin/collections/blog
     label: "Privacy Policy" # Used in the UI
-    folder: "content/docs/privacy-policy" # The path to the folder where the documents are stored
+    folder: "content/privacy-policy" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: md
@@ -44,7 +42,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Table of Contents", name: "toc", widget: "hidden", default: "true"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "contact" # Used in routes, e.g., /admin/collections/blog
@@ -57,6 +54,5 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Table of Contents", name: "toc", widget: "hidden", default: "true"}
       - {label: "Body", name: "body", widget: "markdown"}
